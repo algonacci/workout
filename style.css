@@ -301,6 +301,17 @@ body {
   font-weight: 500;
   letter-spacing: -0.2px;
 }
+.ei.speed { color: #4ea8de; border-color: rgba(78,168,222,0.25); }
+.ei.hr { color: #e74c3c; border-color: rgba(231,76,60,0.25); }
+.ei.suffer { color: #fb923c; border-color: rgba(251,146,60,0.25); }
+.ei.elev { color: #48bfe3; border-color: rgba(72,191,227,0.25); }
+.ei.cadence { color: #a78bfa; border-color: rgba(167,139,250,0.25); }
+.ei.power { color: #facc15; border-color: rgba(250,204,21,0.25); }
+.ei.kudos { color: #f472b6; border-color: rgba(244,114,182,0.25); }
+.ei.achieve { color: #fbbf24; border-color: rgba(251,191,36,0.25); }
+.ei.pr { color: #c084fc; border-color: rgba(192,132,252,0.25); }
+.ei.cal { color: #34d399; border-color: rgba(52,211,153,0.25); }
+.ei.elapsed { color: var(--muted); border-color: var(--border); }
 .extra-item:has(::before "PRs") { color: #fbbf24; border-color: rgba(251,191,36,0.2); }
 .extra-empty { color: var(--dim); font-style: italic; background: transparent; border: none; }
 

@@ -100,19 +100,19 @@ function renderActivity(a) {
   const trainer = a.trainer ? `<span class="tag">trainer</span>` : "";
 
   const extra = [];
-  if (a.max_speed > 0) extra.push(`Max Speed: ${a.max_speed.toFixed(1)} km/h`);
-  if (a.max_heartrate) extra.push(`Max HR: ${Math.round(a.max_heartrate)} bpm`);
-  if (a.suffer_score > 0) extra.push(`Suffer Score: ${Math.round(a.suffer_score)}`);
-  if (a.elev_high > 0) extra.push(`Max Elev: ${Math.round(a.elev_high)}m`);
-  if (a.elev_low < 0) extra.push(`Min Elev: ${Math.round(a.elev_low)}m`);
-  if (a.average_cadence) extra.push(`Cadence: ${Math.round(a.average_cadence * 2)} spm`);
-  if (a.average_watts) extra.push(`Power: ${Math.round(a.average_watts)}W`);
-  if (a.kudos_count > 0) extra.push(`Kudos: ${a.kudos_count}`);
-  if (a.achievement_count > 0) extra.push(`Achievements: ${a.achievement_count}`);
-  if (a.pr_count > 0) extra.push(`PRs: ${a.pr_count}`);
-  if (a.calories > 0) extra.push(`Calories: ${Math.round(a.calories)}`);
+  if (a.max_speed > 0) extra.push(`<span class="ei speed">⚡ Max Speed: ${a.max_speed.toFixed(1)} km/h</span>`);
+  if (a.max_heartrate) extra.push(`<span class="ei hr">❤️ Max HR: ${Math.round(a.max_heartrate)} bpm</span>`);
+  if (a.suffer_score > 0) extra.push(`<span class="ei suffer">🔥 Suffer Score: ${Math.round(a.suffer_score)}</span>`);
+  if (a.elev_high > 0) extra.push(`<span class="ei elev">⛰️ Max Elev: ${Math.round(a.elev_high)}m</span>`);
+  if (a.elev_low < 0) extra.push(`<span class="ei elev">📉 Min Elev: ${Math.round(a.elev_low)}m</span>`);
+  if (a.average_cadence) extra.push(`<span class="ei cadence">🔄 Cadence: ${Math.round(a.average_cadence * 2)} spm</span>`);
+  if (a.average_watts) extra.push(`<span class="ei power">💪 Power: ${Math.round(a.average_watts)}W</span>`);
+  if (a.kudos_count > 0) extra.push(`<span class="ei kudos">👍 Kudos: ${a.kudos_count}</span>`);
+  if (a.achievement_count > 0) extra.push(`<span class="ei achieve">🏆 Achievements: ${a.achievement_count}</span>`);
+  if (a.pr_count > 0) extra.push(`<span class="ei pr">🎯 PRs: ${a.pr_count}</span>`);
+  if (a.calories > 0) extra.push(`<span class="ei cal">🔋 Calories: ${Math.round(a.calories)}</span>`);
   if (a.elapsed_time && a.elapsed_time > a.moving_time) {
-    extra.push(`Elapsed: ${formatTime(a.elapsed_time)}`);
+    extra.push(`<span class="ei elapsed">⏱️ Elapsed: ${formatTime(a.elapsed_time)}</span>`);
   }
 
   const photos = a.photos && a.photos.length
