@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Workout Dashboard</h1>
+    <p id="last-updated"></p>
+  </div>
+  <div class="tabs">
+    <button class="tab active" data-tab="all">All</button>
+    <button class="tab" data-tab="Run">🏃 Run</button>
+    <button class="tab" data-tab="Ride">🚴 Ride</button>
+    <button class="tab" data-tab="Swim">🏊 Swim</button>
+    <button class="tab" data-tab="Walk">🚶 Walk</button>
+    <button class="tab" data-tab="Padel">🎾 Padel</button>
+    <button class="tab" data-tab="WeightTraining">🏋️ Strength</button>
+    <button class="tab" data-tab="other">Other</button>
+  </div>
+  <div id="time-filter" class="time-filter">
+    <select id="year-select" class="filter-select"></select>
+    <select id="month-select" class="filter-select"></select>
+    <button id="filter-clear" class="filter-clear">Clear</button>
+  </div>
+  <div id="stats" class="stats"></div>
+  <div id="loading" class="loading">Loading...</div>
+  <div id="activities" class="activities"></div>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
