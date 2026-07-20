@@ -6,6 +6,8 @@ const activities = JSON.parse(
 );
 const timestamp = new Date().toISOString();
 
+const typeNames = { WeightTraining: "Strength", Workout: "Workout" };
+
 function generateAnalysis(activities) {
   const byType = {}, byDate = {}, byWeek = {};
   const allSorted = [...activities].sort((a, b) => new Date(a.start_date_local) - new Date(b.start_date_local));
@@ -35,6 +37,7 @@ function generateAnalysis(activities) {
 
     for (let i = 0; i < list.length; i++) {
       const a = list[i];
+      const displayType = typeNames[type] || type;
       const prev = i > 0 ? list[i - 1] : null;
       const next = i < list.length - 1 ? list[i + 1] : null;
       const date = new Date(a.start_date_local);
@@ -68,7 +71,7 @@ function generateAnalysis(activities) {
       if (prev) {
         const daysSince = Math.round((date - new Date(prev.start_date_local)) / 86400000);
         const prevDate = new Date(prev.start_date_local).toLocaleDateString("en-ID", { day: "numeric", month: "long" });
-        parts.push(`[VS PREVIOUS] Last ${type} was ${daysSince} day${daysSince > 1 ? "s" : ""} ago (${prevDate}, "${prev.name}").`);
+        parts.push(`[VS PREVIOUS] Last ${displayType} was ${daysSince} day${daysSince > 1 ? "s" : ""} ago (${prevDate}, "${prev.name}").`);
 
         if (distKm && prev.distance > 0 && isTimed) {
           const distDiff = a.distance - prev.distance;
@@ -121,10 +124,10 @@ function generateAnalysis(activities) {
         });
         if (allActsBetween.length > 0) {
           const types = [...new Set(allActsBetween.map(x => x.sport_type || x.type))];
-          parts.push(`Between these two ${type} sessions, you also did ${allActsBetween.length} other workout${allActsBetween.length > 1 ? "s" : ""} (${types.join(", ")}), which may have affected your ${type} performance.`);
+          parts.push(`Between these two ${displayType} sessions, you also did ${allActsBetween.length} other workout${allActsBetween.length > 1 ? "s" : ""} (${types.join(", ")}), which may have affected your ${displayType} performance.`);
         }
       } else {
-        parts.push(`This was your first recorded ${type} session — establishing a baseline for future comparison.`);
+        parts.push(`This was your first recorded ${displayType} session — establishing a baseline for future comparison.`);
       }
 
       const window30 = list.filter(x => {
@@ -147,18 +150,18 @@ function generateAnalysis(activities) {
         const trendPct = Math.abs(((avg - currPace) / avg) * 100).toFixed(0);
 
         if (currPace <= best * 1.002) {
-          parts.push(`[30-DAY] This was your FASTEST pace in the last 30 days — across ${allPaces.length} ${type} sessions.`);
+          parts.push(`[30-DAY] This was your FASTEST pace in the last 30 days — across ${allPaces.length} ${displayType} sessions.`);
         } else if (Math.abs(trendPct) > 1) {
           parts.push(`[30-DAY] Your pace was ${trendPct}% ${trendDir} than your 30-day average (${allPaces.length} sessions). Best pace: ${Math.floor((best * 1000) / 60)}:${String(Math.floor((best * 1000) % 60)).padStart(2, "0")}/km, worst: ${Math.floor((worst * 1000) / 60)}:${String(Math.floor((worst * 1000) % 60)).padStart(2, "0")}/km.`);
         }
 
         if (a.distance >= longest * 0.99) {
-          parts.push(`At ${distKm}km, this was ${a.distance === longest ? "your LONGEST" : "nearly your longest"} ${type} of the month.`);
+          parts.push(`At ${distKm}km, this was ${a.distance === longest ? "your LONGEST" : "nearly your longest"} ${displayType} of the month.`);
         }
 
         const total30Dist = [...window30.map(x => x.distance || 0), a.distance || 0].reduce((s, v) => s + v, 0);
         const total30Time = [...window30.map(x => x.moving_time || 0), a.moving_time || 0].reduce((s, v) => s + v, 0);
-        parts.push(`Total ${type} volume this month: ${(total30Dist / 1000).toFixed(1)}km across ${window30.length + 1} sessions, ${Math.floor(total30Time / 60)}min total.`);
+        parts.push(`Total ${displayType} volume this month: ${(total30Dist / 1000).toFixed(1)}km across ${window30.length + 1} sessions, ${Math.floor(total30Time / 60)}min total.`);
       }
 
       const monthKey = `${date.getFullYear()}-${date.getMonth()}`;

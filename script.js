@@ -3,6 +3,10 @@ const typeIcons = {
   Padel: "🎾", WeightTraining: "🏋️", Workout: "🏋️"
 };
 
+const typeNames = {
+  WeightTraining: "Strength", Workout: "Workout"
+};
+
 function formatDistance(meters) {
   if (!meters) return "-";
   return meters >= 1000 ? `${(meters / 1000).toFixed(2)} km` : `${meters.toFixed(0)} m`;
@@ -50,7 +54,7 @@ function renderStats(activities, filtered) {
   for (const type of mainTypes) {
     const count = activities.filter(a => a.sport_type === type || (type === "WeightTraining" && a.type === "WeightTraining")).length;
     if (count > 0) {
-      bars += `<div class="stat-bar"><div class="stat-fill" style="width:${Math.max((count / total) * 100, 2)}%;background:${colors[type]}"></div><span>${typeIcons[type] || ""} ${type} <strong>${count}</strong></span></div>`;
+      bars += `<div class="stat-bar"><div class="stat-fill" style="width:${Math.max((count / total) * 100, 2)}%;background:${colors[type]}"></div><span>${typeIcons[type] || ""} ${typeNames[type] || type} <strong>${count}</strong></span></div>`;
     }
   }
   const otherCount = activities.filter(a => !["Run","Ride","Swim","Walk","Padel","WeightTraining"].includes(a.sport_type) && a.type !== "WeightTraining").length;
