@@ -84,7 +84,7 @@ function renderActivity(a) {
         <div class="analysis-title">AI Analysis</div>
         ${a.analysis.map(item => `
           <div class="analysis-card">
-            <div class="card-section">${item.section}</div>
+            ${item.section ? `<div class="card-section">${item.section}</div>` : ""}
             <div class="card-content">${item.content}</div>
           </div>
         `).join("")}
