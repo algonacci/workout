@@ -21,16 +21,8 @@
     "has_photos": true,
     "analysis": [
       {
-        "section": "Performance",
-        "content": "Solid consistency run. 10:12 pace on 5km is your sweet spot — sustainable, controlled, no red flags. HR avg 159 is moderate-effort zone (Zone 3). This is the backbone of your training — routine, reliable, repeatable."
-      },
-      {
-        "section": "Why no achievements?",
-        "content": "Zero achievements on a 5km evening run means you've done this exact route before at similar pace. Strava only triggers achievements on new/faster segments. To unlock more, mix the route — go longer, go earlier, take a different path."
-      },
-      {
-        "section": "Elevation note",
-        "content": "57m gain on a flat-looking evening run is sneaky — probably rolling terrain in the route or app miscalculation. Doesn't show in the 51-min time, so likely distributed, not one brutal climb."
+        "section": "",
+        "content": "Your daily anchor run: 10:12 pace on 5km is sustainable & controlled (Zone 3 at 159 HR). No achievements because you're repeating the same route — Strava needs novelty or speed. The 57m elevation gain is sneaky but distributed, not one brutal climb. This is consistent, reliable training."
       }
     ]
   },
@@ -56,20 +48,8 @@
     "has_photos": false,
     "analysis": [
       {
-        "section": "High intensity effort 💪",
-        "content": "Suffer score 160 is your 2nd highest on a 5km run. HR avg 175 (Zone 4 threshold) + max 193 (near max) = you brought everything. Same pace as normal runs (10:18) but cardiac demand was WAY up. Possible factors: afternoon heat, speed intervals, or following the brick session earlier that day."
-      },
-      {
-        "section": "Brick session aftermath",
-        "content": "This was your 2nd workout of the day (Afternoon Ride before this). Running on fatigued legs post-bike explains elevated HR at steady pace. You're training the 'run off the bike' skillset — common in triathlon prep or brick day blocks."
-      },
-      {
-        "section": "Achievement efficiency",
-        "content": "24 achievements + 13 PRs despite high suffer score = good segment coverage. You maintained pace consistency even though your body was working hard. Data shows discipline: not slowing down despite fatigue. That's fitness development."
-      },
-      {
-        "section": "Recovery note",
-        "content": "Max HR 193 and sustained Zone 4 work means this was a hard day. Next 2-3 days should emphasize easy paces and recovery work. Your heart rate tells the story of effort better than pace here."
+        "section": "",
+        "content": "Brick session day (run off the bike): suffer score 160 + HR 175 avg at steady 10:18 pace = running fatigued but controlled. Max HR 193 (Zone 4) despite normal pace shows your body was working hard — this is training the 'run off bike' skillset. 24 achievements + 13 PRs while maintaining discipline = solid fitness. Your heart rate tells the real effort story here."
       }
     ]
   },
@@ -95,20 +75,8 @@
     "has_photos": true,
     "analysis": [
       {
-        "section": "Brick session: bike leg 🚴",
-        "content": "11.64km in 50 min = 3.9 avg speed, decent for urban cycling. Suffer score 99 + HR avg 160 = solid Zone 3-4 effort on the bike. Followed immediately by that hard evening run (your brick combo). You're training the bike-to-run transition."
-      },
-      {
-        "section": "Max speed spike",
-        "content": "10.3 km/h max speed suggests you had a downhill or tailwind section. Not sustained speed, just a fast segment. Normal for urban riding."
-      },
-      {
-        "section": "1 PR, 2 achievements",
-        "content": "Limited Strava tracking on bike = fewer public segments. But you got 1 PR (probably a specific known stretch) and 2 achievements. Shows this route has some trackable sections. Low kudos (0) because cyclists on your feed probably aren't paying attention to 11km afternoon rides."
-      },
-      {
-        "section": "Cross-training value",
-        "content": "This isn't your primary sport (running is), but it provides active recovery on leg day + builds aerobic capacity without impact stress. Smart complementary training."
+        "section": "",
+        "content": "Brick session bike leg: 11.64km in 50min at suffer 99 + HR 160 = solid Zone 3-4 effort. Urban cycling, not primary sport but smart cross-training for aerobic capacity without impact. Followed immediately by hard evening run — training the bike-to-run transition. 1 PR + 2 achievements shows trackable route; low kudos expected on cycling posts."
       }
     ]
   },
@@ -197,24 +165,8 @@
     "has_photos": true,
     "analysis": [
       {
-        "section": "Padel session decoded 🎾",
-        "content": "0.06km in 1 min moving time is Strava noise — you're not running during padel, you're confined to a court. The 41 min elapsed is your real session length: warm-up (5 min) + match (30 min) + cool-down (6 min) typical. Strava's distance tracking fails here."
-      },
-      {
-        "section": "Heart rate story",
-        "content": "HR avg 127 (Zone 2) but max 175 (Zone 4) shows padel's intermittent nature: bursts of high effort (sprints to ball) with recovery (waiting, chatting). Max HR spike (175) = all-out point, probably a rally or competitive moment."
-      },
-      {
-        "section": "Social sport value",
-        "content": "2 kudos on a padel session (vs 0-1 on runs) shows friends value the *social* training more. Padel is community building, not performance chasing. Different energy than solo running."
-      },
-      {
-        "section": "Cross-training benefit",
-        "content": "Low-impact lateral movement + agility work = knee and ankle stability practice. Complements running well. Heart rate variability (127 avg, 175 max) mimics interval training without the muscular damage of tempo runs."
-      },
-      {
-        "section": "Training balance",
-        "content": "Your mix of running (primary), strength (resilience), padel (social + agility), walks (easy/errands) = holistic fitness. Not running-obsessed; you're building a well-rounded lifestyle."
+        "section": "",
+        "content": "Court sport (ignore Strava's 0.06km noise). 41 min actual = warm-up + match + cool-down. HR 127 avg / 175 max shows intermittent bursts (sprints to ball) + recovery — mimics interval training without muscular damage. 2 kudos show friends value social training > performance metrics. Low-impact agility work complements running well. Your holistic mix: running (primary) + strength (resilience) + padel (agility/social)."
       }
     ]
   },
@@ -429,20 +381,8 @@
     "has_photos": true,
     "analysis": [
       {
-        "section": "Comprehensive strength block 💪",
-        "content": "90 minutes of full-body work is serious. You're hitting upper, lower, core in one session. This suggests a maintenance phase (no sport-specific strength) or a heavy training week consolidation. Evening time (20:32) + full scope = energy system work, not hypertrophy."
-      },
-      {
-        "section": "Training philosophy",
-        "content": "Your strength work is complementary to running, not the focus. Full-body sessions mixed with running and cross-training shows a well-rounded athlete. You're not chasing muscle gain; you're training for resilience and injury prevention."
-      },
-      {
-        "section": "No HR data",
-        "content": "Weight training doesn't produce sustained HR data like running. Watch probably logged discontinuous effort (rest between sets, equipment changeover) so no useful average HR. Normal and expected."
-      },
-      {
-        "section": "1 kudos",
-        "content": "Strength sessions rarely get kudos since they're not on public segments. That 1 kudos was likely from a friend who knows you hit the gym. Less visibility than running, more substance."
+        "section": "",
+        "content": "90-min full-body session (upper/lower/core) for resilience, not hypertrophy — complementary to running. Evening time suggests energy systems work. No HR data expected (discontinuous effort between sets). Strength work keeps you injury-proof while running + cross-training carry the load. 1 kudos from friends who know you went to the gym."
       }
     ]
   },
@@ -510,20 +450,8 @@
     "has_photos": true,
     "analysis": [
       {
-        "section": "Your moment 🎯",
-        "content": "This is your PEAK session. 58 achievements + 25 PRs on a 5km run at normal pace (10:18) means GBK route is packed with trackable segments and you went hard on each one. Possibly first time on those segments, or conditions/effort alignment was perfect."
-      },
-      {
-        "section": "Route intelligence",
-        "content": "GBK (Gelora Bung Karno complex?) is your goldmine. 3 kudos suggest the running community there is active. Every segment is a PR — indicates either virgin segments or you're crushing it on familiar terrain with good pace consistency."
-      },
-      {
-        "section": "What to replicate",
-        "content": "Time of day (17:08), location (GBK), 5km distance, ~10:18 pace. These conditions + that route = performance unlocked. Return here when you want to feel like a champion. This route is your confidence builder."
-      },
-      {
-        "section": "Training insight",
-        "content": "No suffer_score recorded, but 52min on 5km with 25 PRs suggests you distributed effort across segments, not one hard push. Smart pacing, positive energy, ideal conditions. This is what sustainable speed feels like."
+        "section": "",
+        "content": "Your PEAK moment: 58 achievements + 25 PRs at normal pace (10:18) = GBK route is packed with segments. This goldmine location (time 17:08, familiar terrain) unlocked everything — possible first-time segments or perfect conditions. Smart pacing across 25 PRs shows distributed effort, not one hard push. Replicate: same time, same place, same pace."
       }
     ]
   },
@@ -759,24 +687,8 @@
     "has_photos": true,
     "analysis": [
       {
-        "section": "Long run day 🏃‍♂️",
-        "content": "Double your usual distance (10.25km vs 5km routine). 133 min moving time on a morning run (06:39 start) = serious endurance work. Pace dropped to 12:58/km (slower than your 5k baseline of 10:12-10:18) — this is expected and healthy for long runs. You're training aerobic base, not speed."
-      },
-      {
-        "section": "Terrain & effort",
-        "content": "25.5m elevation gain + 174 min elapsed (41 min extra vs moving time) = lots of stops/walk breaks or very hilly course. At 12:58 pace with that much elevation, you were likely in Zone 2 endurance work. This is the 'feel good for hours' type of training, not hard anaerobic work."
-      },
-      {
-        "section": "Why no achievements?",
-        "content": "Slow pace (12:58) means you're not hitting PRs on any segments. Long runs aren't designed to set records — they're about time on feet and aerobic adaptation. 0 achievements is correct and expected for a long, easy effort."
-      },
-      {
-        "section": "4 kudos insight",
-        "content": "Highest kudos count on a 'low-intensity' long run suggests the running community respected the effort volume and distance. Your friends notice when you go the distance, even if pace is moderate."
-      },
-      {
-        "section": "Training phase",
-        "content": "Long runs this early morning (06:39) + regular 5km evening runs suggest a structured plan. You're building endurance in mornings and maintaining speed in evenings. Smart periodization."
+        "section": "",
+        "content": "Endurance builder: 10.25km (double your routine) at 12:58/km pace is aerobic base work, not speed. Early morning (06:39) + 41 extra minutes elapsed vs moving time suggests hilly terrain or walk breaks — Zone 2 effort for time-on-feet. No achievements expected at slow pace; 4 kudos show friends respect the distance volume. Structured plan: morning endurance + evening speed work."
       }
     ]
   },
@@ -844,20 +756,8 @@
     "has_photos": true,
     "analysis": [
       {
-        "section": "Short fast run 🏃",
-        "content": "3km in 31 min = 10:15 pace. Shorter distance but same pace as your 5km runs. You're not extending, you're doing a quick maintenance session. Perfect for a travel day or low-energy morning."
-      },
-      {
-        "section": "Morning run efficiency",
-        "content": "06:11 start + 57 min elapsed (26 min extra) suggests extra warmup/cooldown or route navigation. Morning runs usually have logistics (changing, prep) that extend total time beyond moving time."
-      },
-      {
-        "section": "Achievement capture",
-        "content": "3km + 10:15 pace + 3 achievements + 1 PR shows this route has good segment density. You picked a smart location with trackable sections. 2 kudos on a short run means friends noticed the effort or time of day (morning discipline)."
-      },
-      {
-        "section": "Training note",
-        "content": "Short runs between longer sessions are active recovery or maintenance. You're not developing here, you're maintaining fitness and habit. Smart training periodization: long weekend, short weekday."
+        "section": "",
+        "content": "Maintenance run: 3km at 10:15 pace (same speed, shorter distance). Smart location with good segment density (3 achievements + 1 PR). Early morning (06:11) + 26 extra elapsed minutes = prep/logistics. 2 kudos show friends respect morning discipline. Quick session between longer workouts — you're maintaining habit, not developing fitness."
       }
     ]
   },
