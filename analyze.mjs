@@ -37,6 +37,12 @@ function generateAnalysis(activities) {
 
     for (let i = 0; i < list.length; i++) {
       const a = list[i];
+
+      // Skip if activity already has custom analysis
+      if (a.analysis && Array.isArray(a.analysis) && a.analysis.length > 0) {
+        continue;
+      }
+
       const displayType = typeNames[type] || type;
       const prev = i > 0 ? list[i - 1] : null;
       const next = i < list.length - 1 ? list[i + 1] : null;
